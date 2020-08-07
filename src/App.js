@@ -1,25 +1,24 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Search from './components/search'
+const URL = "https://api.spacexdata.com/v3/launches?limit=100"
+const THEME_SECONDARY = "#f77f00";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+    <div className="App" style={{ color: THEME_SECONDARY  }}>
+      <header>
+        <right>
+        <h1>SpaceX Launch Program</h1>
+        </right>
       </header>
+     
     </div>
+     <Search/>
+    
+     </div>
   );
 }
 
